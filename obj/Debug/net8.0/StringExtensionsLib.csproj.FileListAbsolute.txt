@@ -1,0 +1,12 @@
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/bin/Debug/net8.0/StringExtensionsLib.deps.json
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/bin/Debug/net8.0/StringExtensionsLib.dll
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/bin/Debug/net8.0/StringExtensionsLib.pdb
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/obj/Debug/net8.0/StringExtensionsLib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/obj/Debug/net8.0/StringExtensionsLib.AssemblyInfoInputs.cache
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/obj/Debug/net8.0/StringExtensionsLib.AssemblyInfo.cs
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/obj/Debug/net8.0/StringExtensionsLib.csproj.CoreCompileInputs.cache
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/obj/Debug/net8.0/StringExtensionsLib.sourcelink.json
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/obj/Debug/net8.0/StringExtensionsLib.dll
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/obj/Debug/net8.0/refint/StringExtensionsLib.dll
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/obj/Debug/net8.0/StringExtensionsLib.pdb
+/Users/nahom/Desktop/StringExtensionsLib/StringExtensionsLib/obj/Debug/net8.0/ref/StringExtensionsLib.dll
