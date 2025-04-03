@@ -1,0 +1,32 @@
+trigger:
+  - main
+
+pool:
+  name: Default  # Use your self-hosted agent name if it's different
+
+variables:
+  buildConfiguration: 'Release'
+  version: '1.0.0'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '8.0.x'
+    installationPath: $(Agent.ToolsDirectory)/dotnet
+
+- script: dotnet restore --configfile nuget.config
+  displayName: 'Restore NuGet packages'
+
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'Build the project'
+
+- script: dotnet pack --configuration $(buildConfiguration) -p:PackageVersion=$(version) -o $(Build.ArtifactStagingDirectory)
+  displayName: 'Pack the NuGet package'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    publishVstsFeed: 'naraya2'
+    allowPackageConflicts: true  # Optional: avoids failure if version already exists
