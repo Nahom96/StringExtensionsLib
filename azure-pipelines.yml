@@ -28,4 +28,8 @@ steps:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     publishVstsFeed: 'naraya2'
+<<<<<<< HEAD
     allowPackageConflicts: true
+=======
+    allowPackageConflicts: true
+>>>>>>> 0236bee (Added azure-pipelines.yml and other files)
