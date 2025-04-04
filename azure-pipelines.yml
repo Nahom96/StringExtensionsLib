@@ -2,11 +2,10 @@ trigger:
   - main
 
 pool:
-  name: Default  # Use your self-hosted agent name if it's different
+  name: Default
 
 variables:
   buildConfiguration: 'Release'
-  version: '1.0.0'
 
 steps:
 - task: UseDotNet@2
@@ -21,7 +20,7 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'Build the project'
 
-- script: dotnet pack --configuration $(buildConfiguration) -p:PackageVersion=$(version) -o $(Build.ArtifactStagingDirectory)
+- script: dotnet pack --configuration $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)
   displayName: 'Pack the NuGet package'
 
 - task: NuGetCommand@2
@@ -29,4 +28,4 @@ steps:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     publishVstsFeed: 'naraya2'
-    allowPackageConflicts: true  # Optional: avoids failure if version already exists
+    allowPackageConflicts: true
